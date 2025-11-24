@@ -7,6 +7,8 @@ import DigitalTwin from './pages/DigitalTwin';
 import Plants from './pages/Plants';
 import Clients from './pages/Clients';
 import Assets from './pages/Assets';
+import AssetLibrary from './pages/AssetLibrary';
+import DeviceManager from './pages/DeviceManager';
 import AdminLayout from './layouts/AdminLayout';
 import AuthLayout from './layouts/AuthLayout';
 
@@ -45,6 +47,8 @@ function App() {
             <Route path="plants" element={<Plants />} />
             <Route path="clients" element={<Clients />} />
             <Route path="assets" element={<Assets />} />
+            <Route path="library" element={<AssetLibrary />} />
+            <Route path="devices" element={<DeviceManager />} />
             <Route path="settings" element={<div>Settings Page (Coming Soon)</div>} />
           </Route>
         </Routes>

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Outlet, Link, useNavigate, useLocation } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
-import { LayoutDashboard, Factory, Settings, LogOut, Box, Users } from 'lucide-react';
+import { LayoutDashboard, Factory, Settings, LogOut, Box, Users, Cpu } from 'lucide-react';
 
 const AdminLayout = () => {
     const { logout, user } = useAuth();
@@ -19,6 +19,8 @@ const AdminLayout = () => {
         { path: '/plants', icon: <Factory size={20} />, label: 'Plants' },
         { path: '/clients', icon: <Users size={20} />, label: 'Clients' },
         { path: '/assets', icon: <Box size={20} />, label: 'Assets' },
+        { path: '/library', icon: <Box size={20} />, label: '3D Library' },
+        { path: '/devices', icon: <Cpu size={20} />, label: 'Devices' },
         { path: '/settings', icon: <Settings size={20} />, label: 'Settings' },
     ];
 

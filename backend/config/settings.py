@@ -47,6 +47,8 @@ INSTALLED_APPS = [
     'tenants',
     'assets',
     'analytics',
+    'library',
+    'devices',
 ]
 
 MIDDLEWARE = [
